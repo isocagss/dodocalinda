@@ -6,25 +6,6 @@
     <title>Frank Ocean</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    
-<script>
-    function toggleAlbum(id) {
-        const selectedInfo = document.getElementById(id);
-        const isOpen = selectedInfo.classList.contains("show");
-
-        // Fecha todas as caixas de informações.
-        document.querySelectorAll(".album-info").forEach(info => {
-            info.classList.remove("show");
-        });
-
-        // Abre a selecionada, se estava fechada.
-        if (!isOpen) {
-            selectedInfo.classList.add("show");
-        }
-    }
-</script>
-</body>
-
 <body>
 <h1>frank ocean</h1>
 <img class="frankcantando1" src="frank.jpg">
@@ -44,28 +25,118 @@
    Desde então, tornou-se um dos nomes mais respeitados da indústria musical.</p>
    <img src ="frank-ocean-staring-reader-green-hair.jpg">
    <h2>Álbuns</h2>
-   <h4>seus álbuns são:</h4>
-   <h3>Nostalgia, Ultra (2011)</h3>
-   <img src ="ultra.jpg">
-   <p>Primeiro Projeto de grande destaque de Frank Ocean. A mixtape mistura R&B, soul e hip hop, 
-    apresentando letras emocionais sobre amor, juventude e experiências pessoais. Foi o trabalho que 
-    revelou seu talento ao grande público.</p>
-   <h3>Channel Orange (2012)</h3>
-   <img src ="channelorange.png">
-   <p>Primeiro álbun de estúdio de Frank Ocean. O disco aborda temas como amor, solidão, dinheiro e 
-    identidade, combinando diferentes estilos musicais com uma produção sofisticada. Foi amplamente 
-    elogiado pela crítica e venceu um Grammy. </p>
-    <h3>Endless (2016)</h3>
-    <img src ="endless.jpeg">
-    <p>Álbum visual lançado de forma experimental. Apresenta uma sonoridade mais atmosférica e 
-    introspectiva, com foco em transições suaves e experimentação musical. É considerado um projeto 
-    importante na evolução artística de Frank Ocean.</p>
-    <h3>Blonde (2016)</h3>
-    <img src ="blonde.jpg">
-    <p>Considerado o álbum mais influente da carreira de Frank Ocean. Com letras profundas e produção
-    inovadora, aborda memórias, relacionamentos, amadurecimento e identidade. O álbum recebeu 
-    aclamação mundial e é frequentemente citado como um dos melhores da década de 2010.</p>
-    
+   
+<h2>Álbuns</h2>
+<h4>Seus principais projetos:</h4>
+
+<!-- NOSTALGIA, ULTRA -->
+<h3>Nostalgia, Ultra (2011)</h3>
+
+<img
+    src="ultra.jpg"
+    alt="Capa de Nostalgia, Ultra"
+    class="album-cover"
+    onclick="toggleAlbum('ultra-info')"
+>
+
+<p class="album-hint">↗ Clique na capa para saber mais</p>
+
+<div class="album-info" id="ultra-info">
+    <h4>Nostalgia, Ultra</h4>
+    <p><strong>Ano:</strong> 2011</p>
+    <p><strong>Tipo:</strong> Mixtape</p>
+    <p><strong>Estilo:</strong> R&B alternativo, soul e hip hop.</p>
+    <p>
+        Projeto que ajudou a apresentar Frank Ocean ao público.
+        Mistura melodias atmosféricas, referências musicais e
+        narrativas sobre relacionamentos, juventude e experiências pessoais.
+    </p>
+    <p><strong>Faixas em destaque:</strong> Novacane, Swim Good e Songs for Women.</p>
+</div>
+
+
+<!-- CHANNEL ORANGE -->
+<h3>Channel Orange (2012)</h3>
+
+<img
+    src="channelorange.png"
+    alt="Capa de Channel Orange"
+    class="album-cover"
+    onclick="toggleAlbum('orange-info')"
+>
+
+<p class="album-hint">↗ Clique na capa para saber mais</p>
+
+<div class="album-info" id="orange-info">
+    <h4>Channel Orange</h4>
+    <p><strong>Ano:</strong> 2012</p>
+    <p><strong>Tipo:</strong> Álbum de estúdio</p>
+    <p><strong>Estilo:</strong> R&B, soul, pop psicodélico e funk.</p>
+    <p>
+        O primeiro álbum de estúdio de Frank Ocean explora amor,
+        solidão, desejo, desigualdade e identidade. Sua produção
+        combina instrumentos orgânicos com arranjos experimentais
+        e uma narrativa que percorre diferentes personagens e situações.
+    </p>
+    <p><strong>Faixas em destaque:</strong> Thinkin Bout You, Pyramids e Pink Matter.</p>
+</div>
+
+
+<!-- ENDLESS -->
+<h3>Endless (2016)</h3>
+
+<img
+    src="endless.jpeg"
+    alt="Projeto visual Endless"
+    class="album-cover"
+    onclick="toggleAlbum('endless-info')"
+>
+
+<p class="album-hint">↗ Clique na capa para saber mais</p>
+
+<div class="album-info" id="endless-info">
+    <h4>Endless</h4>
+    <p><strong>Ano:</strong> 2016</p>
+    <p><strong>Tipo:</strong> Álbum visual</p>
+    <p><strong>Estilo:</strong> R&B experimental e música ambiente.</p>
+    <p>
+        Lançado como um projeto audiovisual, Endless apresenta
+        uma abordagem experimental, com texturas sonoras,
+        transições entre faixas e uma atmosfera introspectiva.
+        O projeto também antecedeu o lançamento de Blonde.
+    </p>
+    <p><strong>Faixas em destaque:</strong> At Your Best (You Are Love), 
+    Alabama e Comme des Garçons.</p>
+</div>
+
+
+<!-- BLONDE -->
+<h3>Blonde (2016)</h3>
+
+<img
+    src="blonde.jpg"
+    alt="Capa de Blonde"
+    class="album-cover"
+    onclick="toggleAlbum('blonde-info')"
+>
+
+<p class="album-hint">↗ Clique na capa para saber mais</p>
+
+<div class="album-info" id="blonde-info">
+    <h4>Blonde</h4>
+    <p><strong>Ano:</strong> 2016</p>
+    <p><strong>Tipo:</strong> Álbum de estúdio</p>
+    <p><strong>Estilo:</strong> R&B alternativo, pop experimental e soul.</p>
+    <p>
+        Blonde explora memória, identidade, relacionamentos,
+        amadurecimento e a passagem do tempo. Sua produção
+        minimalista e suas mudanças de textura criam uma
+        experiência musical íntima e contemplativa.
+    </p>
+    <p><strong>Faixas em destaque:</strong> Nikes, Ivy, Nights,
+    Self Control e White Ferrari.</p>
+</div>
+
     <h2>musicas mais ouvidas dos álbuns</h2>
     <h3>Ivy</h3>
     <p>Faixa do albun<h5>blonde</h5> que retrata de um relacionamento passado. A música aborda
@@ -224,5 +295,22 @@
     admirado por fãs e críticos ao redor do mundo.</p>
 
 <footer><a href="https://youtu.be/midVwDF2ko8?si=ig7xB5Y72UKYfYf-">frank cantando pyramids</a></footer>
+    
+<script>
+    function toggleAlbum(id) {
+        const selectedInfo = document.getElementById(id);
+        const isOpen = selectedInfo.classList.contains("show");
+
+        // Fecha todas as caixas de informações.
+        document.querySelectorAll(".album-info").forEach(info => {
+            info.classList.remove("show");
+        });
+
+        // Abre a selecionada, se estava fechada.
+        if (!isOpen) {
+            selectedInfo.classList.add("show");
+        }
+    }
+</script>
 </body>
 </html>
