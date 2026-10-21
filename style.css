@@ -10,3 +10,64 @@ h1{
 .frankcantando1{width: 35%;
 
 }
+
+/* Imagens dos álbuns */
+.album-cover {
+    width: 220px;
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-cover:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(185, 78, 31, 0.3);
+}
+
+/* Caixa de informações */
+.album-info {
+    display: none;
+    max-width: 500px;
+    margin: 15px 0 25px;
+    padding: 20px;
+
+    background-color: #f6e8cb;
+    color: #29241f;
+    border-left: 5px solid #e87932;
+    border-radius: 5px;
+
+    line-height: 1.7;
+    animation: appear 0.3s ease;
+}
+
+.album-info.show {
+    display: block;
+}
+
+.album-info h4 {
+    margin-top: 0;
+    color: #b94e1f;
+    font-size: 22px;
+}
+
+.album-info p {
+    margin-bottom: 10px;
+}
+
+.album-hint {
+    font-size: 13px;
+    color: #8b654b;
+    margin-top: 5px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
