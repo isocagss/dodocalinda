@@ -6,6 +6,25 @@
     <title>Frank Ocean</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    
+<script>
+    function toggleAlbum(id) {
+        const selectedInfo = document.getElementById(id);
+        const isOpen = selectedInfo.classList.contains("show");
+
+        // Fecha todas as caixas de informações.
+        document.querySelectorAll(".album-info").forEach(info => {
+            info.classList.remove("show");
+        });
+
+        // Abre a selecionada, se estava fechada.
+        if (!isOpen) {
+            selectedInfo.classList.add("show");
+        }
+    }
+</script>
+</body>
+
 <body>
 <h1>frank ocean</h1>
 <img class="frankcantando1" src="frank.jpg">
