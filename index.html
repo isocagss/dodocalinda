@@ -1,315 +1,568 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank Ocean</title>
+    <title>Frank Ocean - Tributo e Discografia</title>
+    <!-- Fonte Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS Externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>frank ocean</h1>
-<img class="frankcantando1" src="frank.jpg">
-<p>Frank Ocean é um dos artistas mais influentes da música contemporânea. Conhecido por sua 
-    voz marcante, letras profundas e estilo inovador, ele conquistou milhões de fãs ao redor 
-    do mundo. Sua música mistura R&B, soul, pop alternativo e hip hop, criando um som único que 
-    marcou uma geração.</p>
-<h2>quem é frank ocean</h2>
-<p>Frank Ocean nasceu como Christopher Edwin Breaux em 28 de outubro de 1987, na 
-    cidade de Long Beach, Califórnia, Estados Unidos. Ainda jovem, mudou-se para 
-    Nova Orleans, onde desenvolveu seu interesse pela música. Após o furacão Katrina 
-    destruir seu estúdio de gravação, ele mudou-se para Los Angeles para perseguir sua 
-    carreira artística.
 
-   Antes da fama, Frank trabalhou como compositor para diversos artistas famosos. Em 2011,
-   lançou a mixtape "Nostalgia, Ultra", que recebeu grande reconhecimento da crítica e do público. 
-   Desde então, tornou-se um dos nomes mais respeitados da indústria musical.</p>
-   <img src ="frank-ocean-staring-reader-green-hair.jpg">
-   
-<h2>Álbuns</h2>
-<h4>Seus principais projetos:</h4>
+    <!-- Barra de Progresso de Leitura -->
+    <div class="progress-bar" id="progressBar"></div>
 
-<!-- NOSTALGIA, ULTRA -->
-<h3>Nostalgia, Ultra (2011)</h3>
+    <!-- Navegação / Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">FRANK OCEAN</a>
+            <nav class="nav-links">
+                <a href="#sobre">Biografia</a>
+                <a href="#albun">Álbuns</a>
+                <a href="#musicas">Músicas</a>
+                <a href="#singles">Singles</a>
+                <a href="#premios">Prêmios</a>
+            </nav>
+        </div>
+    </header>
 
-<img
-    src="ultra.jpg"
-    alt="Capa de Nostalgia, Ultra"
-    class="album-cover"
-    onclick="toggleAlbum('ultra-info')"
->
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Artista &amp; Compositor</span>
+            <h1>frank ocean</h1>
+            <p class="hero-desc">
+                Frank Ocean é um dos artistas mais influentes da música contemporânea. Conhecido por sua voz marcante, letras profundas e estilo inovador, ele conquistou milhões de fãs ao redor do mundo. Sua música mistura R&amp;B, soul, pop alternativo e hip hop, criando um som único que marcou uma geração.
+            </p>
+        </div>
+        <div class="hero-image-wrapper">
+            <img class="frankcantando1 lightbox-trigger" src="frank.jpg" alt="Frank Ocean cantando" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80'">
+        </div>
+    </section>
 
-<p class="album-hint">↗ Clique na capa para saber mais</p>
+    <main class="container">
 
-<div class="album-info" id="ultra-info">
-    <h4>Nostalgia, Ultra</h4>
-    <p><strong>Ano:</strong> 2011</p>
-    <p><strong>Tipo:</strong> Mixtape</p>
-    <p><strong>Estilo:</strong> R&B alternativo, soul e hip hop.</p>
-    <p>
-        Projeto que ajudou a apresentar Frank Ocean ao público.
-        Mistura melodias atmosféricas, referências musicais e
-        narrativas sobre relacionamentos, juventude e experiências pessoais.
-    </p>
-    <p><strong>Faixas em destaque:</strong> Novacane, Swim Good e Songs for Women.</p>
-</div>
+        <!-- Seção: Biografia -->
+        <section id="sobre" class="card section-bio">
+            <h2>quem é frank ocean</h2>
+            <div class="bio-grid">
+                <div class="bio-text">
+                    <p>
+                        Frank Ocean nasceu como Christopher Edwin Breaux em 28 de outubro de 1987, na cidade de Long Beach, Califórnia, Estados Unidos. Ainda jovem, mudou-se para Nova Orleans, onde desenvolveu seu interesse pela música. Após o furacão Katrina destruir seu estúdio de gravação, ele mudou-se para Los Angeles para perseguir sua carreira artística.
+                    </p>
+                    <p>
+                        Antes da fama, Frank trabalhou como compositor para diversos artistas famosos. Em 2011, lançou a mixtape "Nostalgia, Ultra", que recebeu grande reconhecimento da crítica e do público. Desde então, tornou-se um dos nomes mais respeitados da indústria musical.
+                    </p>
+                </div>
+                <div class="bio-img-container">
+                    <img src="frank-ocean-staring-reader-green-hair.jpg" alt="Frank Ocean com cabelo verde" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80'">
+                </div>
+            </div>
+        </section>
 
+        <!-- Seção: Álbuns -->
+        <section id="albun" class="section-albums">
+            <div class="section-header">
+                <h2>Álbuns</h2>
+                <h4>Seus principais projetos:</h4>
+            </div>
 
-<!-- CHANNEL ORANGE -->
-<h3>Channel Orange (2012)</h3>
+            <div class="albums-grid">
+                
+                <!-- NOSTALGIA, ULTRA -->
+                <div class="album-card">
+                    <h3>Nostalgia, Ultra (2011)</h3>
+                    <div class="cover-wrapper">
+                        <img src="ultra.jpg" alt="Capa de Nostalgia, Ultra" class="album-cover" onclick="toggleAlbum('ultra-info')" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <p class="album-hint" onclick="toggleAlbum('ultra-info')">↗ Clique na capa para saber mais</p>
 
-<img
-    src="channelorange.png"
-    alt="Capa de Channel Orange"
-    class="album-cover"
-    onclick="toggleAlbum('orange-info')"
->
+                    <div class="album-info" id="ultra-info">
+                        <h4>Nostalgia, Ultra</h4>
+                        <p><strong>Ano:</strong> 2011</p>
+                        <p><strong>Tipo:</strong> Mixtape</p>
+                        <p><strong>Estilo:</strong> R&amp;B alternativo, soul e hip hop.</p>
+                        <p>
+                            Projeto que ajudou a apresentar Frank Ocean ao público.
+                            Mistura melodias atmosféricas, referências musicais e
+                            narrativas sobre relacionamentos, juventude e experiências pessoais.
+                        </p>
+                        <p><strong>Faixas em destaque:</strong> Novacane, Swim Good e Songs for Women.</p>
+                    </div>
+                </div>
 
-<p class="album-hint">↗ Clique na capa para saber mais</p>
+                <!-- CHANNEL ORANGE -->
+                <div class="album-card">
+                    <h3>Channel Orange (2012)</h3>
+                    <div class="cover-wrapper">
+                        <img src="channelorange.png" alt="Capa de Channel Orange" class="album-cover" onclick="toggleAlbum('orange-info')" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <p class="album-hint" onclick="toggleAlbum('orange-info')">↗ Clique na capa para saber mais</p>
 
-<div class="album-info" id="orange-info">
-    <h4>Channel Orange</h4>
-    <p><strong>Ano:</strong> 2012</p>
-    <p><strong>Tipo:</strong> Álbum de estúdio</p>
-    <p><strong>Estilo:</strong> R&B, soul, pop psicodélico e funk.</p>
-    <p>
-        O primeiro álbum de estúdio de Frank Ocean explora amor,
-        solidão, desejo, desigualdade e identidade. Sua produção
-        combina instrumentos orgânicos com arranjos experimentais
-        e uma narrativa que percorre diferentes personagens e situações.
-    </p>
-    <p><strong>Faixas em destaque:</strong> Thinkin Bout You, Pyramids e Pink Matter.</p>
-</div>
+                    <div class="album-info" id="orange-info">
+                        <h4>Channel Orange</h4>
+                        <p><strong>Ano:</strong> 2012</p>
+                        <p><strong>Tipo:</strong> Álbum de estúdio</p>
+                        <p><strong>Estilo:</strong> R&amp;B, soul, pop psicodélico e funk.</p>
+                        <p>
+                            O primeiro álbum de estúdio de Frank Ocean explora amor,
+                            solidão, desejo, desigualdade e identidade. Sua produção
+                            combina instrumentos orgânicos com arranjos experimentais
+                            e uma narrativa que percorre diferentes personagens e situações.
+                        </p>
+                        <p><strong>Faixas em destaque:</strong> Thinkin Bout You, Pyramids e Pink Matter.</p>
+                    </div>
+                </div>
 
+                <!-- ENDLESS -->
+                <div class="album-card">
+                    <h3>Endless (2016)</h3>
+                    <div class="cover-wrapper">
+                        <img src="endless.jpeg" alt="Projeto visual Endless" class="album-cover" onclick="toggleAlbum('endless-info')" onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <p class="album-hint" onclick="toggleAlbum('endless-info')">↗ Clique na capa para saber mais</p>
 
-<!-- ENDLESS -->
-<h3>Endless (2016)</h3>
+                    <div class="album-info" id="endless-info">
+                        <h4>Endless</h4>
+                        <p><strong>Ano:</strong> 2016</p>
+                        <p><strong>Tipo:</strong> Álbum visual</p>
+                        <p><strong>Estilo:</strong> R&amp;B experimental e música ambiente.</p>
+                        <p>
+                            Lançado como um projeto audiovisual, Endless apresenta
+                            uma abordagem experimental, com texturas sonoras,
+                            transições entre faixas e uma atmosfera introspectiva.
+                            O projeto também antecedeu o lançamento de Blonde.
+                        </p>
+                        <p><strong>Faixas em destaque:</strong> At Your Best (You Are Love), Alabama e Comme des Garçons.</p>
+                    </div>
+                </div>
 
-<img
-    src="endless.jpeg"
-    alt="Projeto visual Endless"
-    class="album-cover"
-    onclick="toggleAlbum('endless-info')"
->
+                <!-- BLONDE -->
+                <div class="album-card">
+                    <h3>Blonde (2016)</h3>
+                    <div class="cover-wrapper">
+                        <img src="blonde.jpg" alt="Capa de Blonde" class="album-cover" onclick="toggleAlbum('blonde-info')" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <p class="album-hint" onclick="toggleAlbum('blonde-info')">↗ Clique na capa para saber mais</p>
 
-<p class="album-hint">↗ Clique na capa para saber mais</p>
+                    <div class="album-info" id="blonde-info">
+                        <h4>Blonde</h4>
+                        <p><strong>Ano:</strong> 2016</p>
+                        <p><strong>Tipo:</strong> Álbum de estúdio</p>
+                        <p><strong>Estilo:</strong> R&amp;B alternativo, pop experimental e soul.</p>
+                        <p>
+                            Blonde explora memória, identidade, relacionamentos,
+                            amadurecimento e a passagem do tempo. Sua produção
+                            minimalista e suas mudanças de textura criam uma
+                            experiência musical íntima e contemplativa.
+                        </p>
+                        <p><strong>Faixas em destaque:</strong> Nikes, Ivy, Nights, Self Control e White Ferrari.</p>
+                    </div>
+                </div>
 
-<div class="album-info" id="endless-info">
-    <h4>Endless</h4>
-    <p><strong>Ano:</strong> 2016</p>
-    <p><strong>Tipo:</strong> Álbum visual</p>
-    <p><strong>Estilo:</strong> R&B experimental e música ambiente.</p>
-    <p>
-        Lançado como um projeto audiovisual, Endless apresenta
-        uma abordagem experimental, com texturas sonoras,
-        transições entre faixas e uma atmosfera introspectiva.
-        O projeto também antecedeu o lançamento de Blonde.
-    </p>
-    <p><strong>Faixas em destaque:</strong> At Your Best (You Are Love), 
-    Alabama e Comme des Garçons.</p>
-</div>
+            </div>
+        </section>
 
+        <!-- Seção: Músicas Mais Ouvidas -->
+        <section id="musicas" class="section-tracks">
+            <h2>musicas mais ouvidas dos álbuns</h2>
 
-<!-- BLONDE -->
-<h3>Blonde (2016)</h3>
+            <!-- Busca Dinâmica em JavaScript -->
+            <div class="search-box">
+                <input type="text" id="songSearch" placeholder="🔍 Filtrar música ou álbum..." onkeyup="filterSongs()">
+            </div>
 
-<img
-    src="blonde.jpg"
-    alt="Capa de Blonde"
-    class="album-cover"
-    onclick="toggleAlbum('blonde-info')"
->
+            <div class="tracks-grid" id="tracksGrid">
+                
+                <div class="track-card">
+                    <h3>Ivy</h3>
+                    <p>Faixa do álbum <em>Blonde</em> que retrata de um relacionamento passado. A música aborda amadurecimento, nostalgia e os sentimentos que permanecem após o fim de uma relação.</p>
+                </div>
 
-<p class="album-hint">↗ Clique na capa para saber mais</p>
+                <div class="track-card">
+                    <h3>Self Control</h3>
+                    <p>Uma das canções mais emocionais de Frank Ocean. A letra fala sobre amor perdido, saudade e a dificuldade de seguir em frente depois de uma separação.</p>
+                </div>
 
-<div class="album-info" id="blonde-info">
-    <h4>Blonde</h4>
-    <p><strong>Ano:</strong> 2016</p>
-    <p><strong>Tipo:</strong> Álbum de estúdio</p>
-    <p><strong>Estilo:</strong> R&B alternativo, pop experimental e soul.</p>
-    <p>
-        Blonde explora memória, identidade, relacionamentos,
-        amadurecimento e a passagem do tempo. Sua produção
-        minimalista e suas mudanças de textura criam uma
-        experiência musical íntima e contemplativa.
-    </p>
-    <p><strong>Faixas em destaque:</strong> Nikes, Ivy, Nights,
-    Self Control e White Ferrari.</p>
-</div>
+                <div class="track-card">
+                    <h3>White Ferrari</h3>
+                    <p>Música introspectiva que explora temas como juventude, crescimento pessoal e lembranças marcantes. É conhecida por sua atmosfera melancólica e poética.</p>
+                </div>
 
-    <h2>musicas mais ouvidas dos álbuns</h2>
-    <h3>Ivy</h3>
-    <p>Faixa do albun<h5>blonde</h5> que retrata de um relacionamento passado. A música aborda
-    amadurecimento, nostalgia e os sentimentos que permanecem após o fim de uma relação</p>
-    <h3>Self control</h3>
-    <p>Uma das canções mais emocionais de frank ocean. A letra fala sobre amor perdido, saudade e a
-    dificuldade de seguir em frente depois de uma separação.</p>
-    <h3>White Ferrari</h3>
-    <p>Música inytrosperctiva que explora temas como juventude, crescimento pessoal e lembranças 
-    marcantes. É conhecida por sua atmosfera melancólica e poética.</p>
-    <h3>Godspeed</h3>
-    <p>Canção delicada e emocionante que transmite uma mensagem de despedida e carinho. A música fala
-    sobre desejar felicidade e sucesso para alguém importante.</p>
-    <h3>Pink Matter</h3>
-    <p>Faixa do álbun <h5>Channeel Orange</h5> que mistura reflexões sobre amor, desejos e a complexidade
-    dos relacionamentos humanos, com uma sonoridade suave e envolvente.</p>
-    <h3>Pyramids</h3>
-    <p>Uma das músicas mais ambiciosas da carreira de Frank Ocean. A canção apresenta uma narativa
-    extensa que conectta temas históricos, amor poder e identidade.</p>
-    <h3>Nights</h3>
-    <p>Faixa muito elogiada de <h5>Blonde</h5>, conhecida por sua muudança de ritmo no meio da música. A 
-    letra aborda trabalho, família, perdas e transformações na vida dos artistas.</p>
-    <h3>Solo</h3>
-    <p>Canção introspectiva que trata dde independência, solidão e autoconhecimento. Sua produção
-    minimalista destaca a profundidade da letra.</p>
-    <h3>Seigfried</h3>
-    <p>Música reflexiva que explora dúvidas existenciais, sonhos e busca por propósitos. É considerada
-    uma das composições mais pessoais de Frank Ocean.</p>
-    <h3>Bad Realigion</h3>
-    <p>Faixa do álbum <h5>Channel Orange</h5> que utiliza uma conversa com um motorista de táxi como metáfora
-    para expressar sofrimento emocional e amor não correspondido.</p>
+                <div class="track-card">
+                    <h3>Godspeed</h3>
+                    <p>Canção delicada e emocionante que transmite uma mensagem de despedida e carinho. A música fala sobre desejar felicidade e sucesso para alguém importante.</p>
+                </div>
 
-    <h2>Singles</h2>
-    <h3>Novacane (2011)</h3>
-    <img src ="novacane.jpeg">
-    <p>Priemiro single de destaque de Frank Ocean. A música apresenta uma mistura de R&B alternativo e letras
-    introspectivas, explorando temas como solidão, excessos e desconexão emocional.</p>
-    <h3>Thinkin Bout You (2012)</h3>
-    <img src ="thinkin.jpeg">
-    <p>Um dos maiores sucessos de sua carreira. A canção fala sobre amor, saudade e vulnerabilidade, destacando
-    a capacidade de Frank Ocean de transmitir emoções profundas.</p>
-    <h3>Provider (2017)</h3>
-    <img src ="provider.jpeg">
-    <p>Single lançado após o álbum <h5>Blonde</h5>. A música apresenta uma atmosfera suave e reflexiva, abordando sonhos,
-    relacionamentos e ambições pessoais.</p>
-    <h3>Chanel (2017)</h3>
-    <img src ="chanel.jpeg">
-    <p>Canção que discute identidade,dualidade e autoconhecimento. É considerada uma das músicas mais importantes da sua
-    sua fase pós-blonde.</p>
-    <h3>In My Room (2019)</h3>
-    <img src ="download (3).jpeg">
-    <p>Single com influências eletrônicas e experimentais. A faixa apresenta uma sonoridade moderna e minimalista,
-    característica do estilo inovador de Frank Ocean.</p>
-    <h3>DHL (2019)</h3>
-    <img src ="download (4).jpeg">
-    <p>Música que combina elementos de hip hop e R&B alternativo, trazendo reflexões sobre fama, sucesso e sua
-    trajetória artística. </p>
+                <div class="track-card">
+                    <h3>Pink Matter</h3>
+                    <p>Faixa do álbum <em>Channel Orange</em> que mistura reflexões sobre amor, desejos e a complexidade dos relacionamentos humanos, com uma sonoridade suave e envolvente.</p>
+                </div>
 
-    <h2>EPs e Projetos Curtos</h2>
-    <h3>Dear April (2020)</h3>
-    <img src ="dear april.png">
-    <p>Lançado como single com versões alternativas e remixes. A música possui uma sonoridade melancólica e aborda temas
-    relacionados ao amor e á passagem do tempo.</p>
-    <h3>Cayendo (2020)</h3>
-    <img src ="cayendo.jpeg">
-    <p>Cançãomcom influências do pop latino e do R&B. A letra fala sobre vulnerabilidade emocional e dificuldades
-    em realicionamentos amorosos.</p>
+                <div class="track-card">
+                    <h3>Pyramids</h3>
+                    <p>Uma das músicas mais ambiciosas da carreira de Frank Ocean. A canção apresenta uma narrativa extensa que conecta temas históricos, amor, poder e identidade.</p>
+                </div>
 
-   <p>Embora Frank Ocean seja mais conhecido por seus álbuns e singles, ele também lançou projetos especiais, versões
-    alternativas e faixas exclusivas que ajudaram a consolidar sua reputação como um dos artistas mais criativos e 
-    influentes da música contemporânea.</p>
+                <div class="track-card">
+                    <h3>Nights</h3>
+                    <p>Faixa muito elogiada de <em>Blonde</em>, conhecida por sua mudança de ritmo no meio da música. A letra aborda trabalho, família, perdas e transformações na vida dos artistas.</p>
+                </div>
 
-    <h2>Participações mais conhecidas</h2>
-    <h3>She (tyler, the creator)</h3>
-    <img src ="she2.jpeg">
-    <p>A música conta a história de uma paixão obsessiva e dos sentimentos intensos por álguem.</p>
+                <div class="track-card">
+                    <h3>Solo</h3>
+                    <p>Canção introspectiva que trata de independência, solidão e autoconhecimento. Sua produção minimalista destaca a profundidade da letra.</p>
+                </div>
 
-    <h3>No church in the wild (Jay-Z e kanye West)</h3>
-    <img src ="no church.jpeg">
-    <p>A música quetsiona poder, religião, moralidade e liberdade na sociedade moderna.</p>
+                <div class="track-card">
+                    <h3>Seigfried</h3>
+                    <p>Música reflexiva que explora dúvidas existenciais, sonhos e busca por propósitos. É considerada uma das composições mais pessoais de Frank Ocean.</p>
+                </div>
 
-    <h3>Made in America (Jay-Z e Kanye West)</h3>
-    <img src ="made in.jpeg">
-    <p>Celebra a superação, o sucesso e a realização do sonho americano.</p>
+                <div class="track-card">
+                    <h3>Bad Religion</h3>
+                    <p>Faixa do álbum <em>Channel Orange</em> que utiliza uma conversa com um motorista de táxi como metáfora para expressar sofrimento emocional e amor não correspondido.</p>
+                </div>
 
-    <h3>Superpower (Beyoncé)</h3>
-    <img src ="super.png">
-    <p>Fala sobre amor, união e a força que duas pessoas têm quando permanecem juntas.</p>
+            </div>
+        </section>
 
-    <h3>Where This Flower Blooms (Tyler, the creator)</h3>
-    <img src ="bloons.jpeg">
-    <p>Trata de crescimento pessoal,sucesso e gratidão pelas conquistas alcançadas.</p>
+        <!-- Seção: Singles -->
+        <section id="singles" class="section-media-grid">
+            <h2>Singles</h2>
+            <div class="media-cards">
 
-    <h3>Carousel (Travis Scott)</h3>
-    <img src ="carousel.jpeg">
-    <p>Aborda ambição, fama e a busca por novos objetivos.</p>
+                <div class="media-card">
+                    <img src="novacane.jpeg" alt="Novacane" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Novacane (2011)</h3>
+                        <p>Primeiro single de destaque de Frank Ocean. A música apresenta uma mistura de R&amp;B alternativo e letras introspectivas, explorando temas como solidão, excessos e desconexão emocional.</p>
+                    </div>
+                </div>
 
-    <h2>Frank Compositor</h2>
-    <p>Antes de se tornar um cantor ,umdialmente conhecido, Frank Ocean trabalhou como compositor 
-    para diversos artistas. Suas composições abordavam temas como amor, saudade, crescimento pessoal
-    e autoconhecimento. Esse período foi importante para desenvolver seu talento como escritor, que 
-    mais tarde se tornaria uma das características mais marcantes de sua carreira musical.
-    Algumas de suas composições são:</p>
-    <h3>Bigger (Justin Bieber)</h3>
-    <p>Fala sobre crescimento pessoal, confiança e acreditar que é possível alcançar objetivos maiores.</p>
+                <div class="media-card">
+                    <img src="thinkin.jpeg" alt="Thinkin Bout You" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Thinkin Bout You (2012)</h3>
+                        <p>Um dos maiores sucessos de sua carreira. A canção fala sobre amor, saudade e vulnerabilidade, destacando a capacidade de Frank Ocean de transmitir emoções profundas.</p>
+                    </div>
+                </div>
 
-    <h3>I Miss You (Beyoncé)</h3>
-    <p>Retrata a saudade e a dor de estar longe de alguém que se ama.</p>
+                <div class="media-card">
+                    <img src="provider.jpeg" alt="Provider" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Provider (2017)</h3>
+                        <p>Single lançado após o álbum <em>Blonde</em>. A música apresenta uma atmosfera suave e reflexiva, abordando sonhos, relacionamentos e ambições pessoais.</p>
+                    </div>
+                </div>
 
-    <h3>One Thing (Alicia Keys)</h3>
-    <p>Fala sobre encontrara algo ou alguém que dá verdadeiro sentido á vida.</p>
+                <div class="media-card">
+                    <img src="chanel.jpeg" alt="Chanel" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Chanel (2017)</h3>
+                        <p>Canção que discute identidade, dualidade e autoconhecimento. É considerada uma das músicas mais importantes da sua fase pós-blonde.</p>
+                    </div>
+                </div>
 
-    <h2>Prêmios e Reconhecimentos</h2>
-    <p>Ao longo de sua carreira, Frank Ocean recebeu diversos prêmios impoetantesbda indústria musical, sendo
-    reconhecido por suas letras profundas, inovação artística e influência no R&B contemporâneo. Os prêmios são:</p>
-    
-    <h3>Grammy Awards (2013)</h3>
-    <p>Frank ganhou 2 prêmios Grammy, a maior premiação nos Estados Unidos:</p>
-    <h4>O melhor Álbum Urbano</h4>
-    <p>Contemporâneo pelo álbum Channel Orange</p>
-    <img src ="frank premio1.jpeg">
-    
-    <h4>Melhor Colaboração Rap/Cantada</h4>
-    <p>pela música No Churc in the Wild, ao lado de Jay-Z, Kanye West e The-Dream.</p>
-    <img src ="frank premio amig.jpeg">
-    
-    <p>Além das vitórias, ele também foi indicado a categorias importantes como Álbum do Ano, Gravação do Ano e Artista 
-    Revelação.</p>
+                <div class="media-card">
+                    <img src="download (3).jpeg" alt="In My Room" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>In My Room (2019)</h3>
+                        <p>Single com influências eletrônicas e experimentais. A faixa apresenta uma sonoridade moderna e minimalista, característica do estilo inovador de Frank Ocean.</p>
+                    </div>
+                </div>
 
-    <h3>Brit Award (2013)</h3>
-    <p>Frank Ocean venceu o Brit Award de Melhor Artista Masculino Internacional, uma das maiores premiações musicais 
-    do Reino Unido</p>
-    <img src ="frank brit.jpeg">
+                <div class="media-card">
+                    <img src="download (4).jpeg" alt="DHL" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>DHL (2019)</h3>
+                        <p>Música que combina elementos de hip hop e R&amp;B alternativo, trazendo reflexões sobre fama, sucesso e sua trajetória artística.</p>
+                    </div>
+                </div>
 
-    <h3>GLAAD Media Award (2013)</h3>
-    <p>Seu álbum <h5>Channel Orange</h5> recebeu o prêmio de Mwlhor ARtista Musical da organização GLAAD, que reconhece 
-    artistas que promovem representações positivas e inclusivas.</p>
-    <p>Além dos prêmios, ele é frquentemente citado como uma das maiores influências da música do século XXI.</p>
+            </div>
+        </section>
 
-    <h2>Curiosidades</h2>
-    <p>Em 2012, publicou uma carta aberta falando sobre um relacionamento amoroso com outro homem, tornando-se uma figura
-    importante para a representatividade LGBTQIA+ na música.</p>
-    <p>Em 2015, Frank Ocean alterou legalmennte seu nome de Christopher Breaux para Christopher Francis Ocean.</p>
-    <p>Frank tem grande interesse por automóveis, tema que aparece em várias de suas músicas e entrevistas.</p>
-    <p>Diferente de muitos artistas famosos, Frank raramente compartilha detalhes de sua vida pessoal nas redes sociais.</p>
-    <p>Ele tem grande influência na música atual. Artistas como SZA, Billie Eilish e The Weeknd ja foram comparados
-    ao estillo inovador e emocional de Frank Ocean.</p>
-    <p>Frank é conhecido por esconder significados e referências em suas letras, o que faz com que muitos fãs passem 
-    anos analisando suas músicas.</p>
+        <!-- Seção: EPs e Projetos Curtos -->
+        <section class="section-media-grid">
+            <h2>EPs e Projetos Curtos</h2>
+            <div class="media-cards">
 
-    <img src ="frankk.jpg">
-    
-    <h2>Legado</h2>
-    <p>Frank Ocean redefiniu os limitesm do R&B moderno ao combinar experimentação sonora, poesia e autencidade em suas 
-    obras. Sua influência pode ser vista em diversos artistas contemporâneos, e seu trabalho continua sendo estudado e 
-    admirado por fãs e críticos ao redor do mundo.</p>
+                <div class="media-card">
+                    <img src="dear april.png" alt="Dear April" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Dear April (2020)</h3>
+                        <p>Lançado como single com versões alternativas e remixes. A música possui uma sonoridade melancólica e aborda temas relacionados ao amor e à passagem do tempo.</p>
+                    </div>
+                </div>
 
-<footer><a href="https://youtu.be/midVwDF2ko8?si=ig7xB5Y72UKYfYf-">frank cantando pyramids</a></footer>
-    
-<script>
-    function toggleAlbum(id) {
-        const selectedInfo = document.getElementById(id);
-        const isOpen = selectedInfo.classList.contains("show");
+                <div class="media-card">
+                    <img src="cayendo.jpeg" alt="Cayendo" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Cayendo (2020)</h3>
+                        <p>Canção com influências do pop latino e do R&amp;B. A letra fala sobre vulnerabilidade emocional e dificuldades em relacionamentos amorosos.</p>
+                    </div>
+                </div>
 
-        // Fecha todas as caixas de informações.
-        document.querySelectorAll(".album-info").forEach(info => {
-            info.classList.remove("show");
+            </div>
+
+            <p class="highlight-text">
+                Embora Frank Ocean seja mais conhecido por seus álbuns e singles, ele também lançou projetos especiais, versões alternativas e faixas exclusivas que ajudaram a consolidar sua reputação como um dos artistas mais criativos e influentes da música contemporânea.
+            </p>
+        </section>
+
+        <!-- Seção: Participações -->
+        <section class="section-media-grid">
+            <h2>Participações mais conhecidas</h2>
+            <div class="media-cards">
+
+                <div class="media-card">
+                    <img src="she2.jpeg" alt="She" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>She (Tyler, The Creator)</h3>
+                        <p>A música conta a história de uma paixão obsessiva e dos sentimentos intensos por alguém.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <img src="no church.jpeg" alt="No Church in the Wild" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>No Church in the Wild (Jay-Z e Kanye West)</h3>
+                        <p>A música questiona poder, religião, moralidade e liberdade na sociedade moderna.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <img src="made in.jpeg" alt="Made in America" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Made in America (Jay-Z e Kanye West)</h3>
+                        <p>Celebra a superação, o sucesso e a realização do sonho americano.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <img src="super.png" alt="Superpower" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Superpower (Beyoncé)</h3>
+                        <p>Fala sobre amor, união e a força que duas pessoas têm quando permanecem juntas.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <img src="bloons.jpeg" alt="Where This Flower Blooms" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Where This Flower Blooms (Tyler, The Creator)</h3>
+                        <p>Trata de crescimento pessoal, sucesso e gratidão pelas conquistas alcançadas.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <img src="carousel.jpeg" alt="Carousel" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80'">
+                    <div class="media-content">
+                        <h3>Carousel (Travis Scott)</h3>
+                        <p>Aborda ambição, fama e a busca por novos objetivos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção: Compositor -->
+        <section class="card">
+            <h2>Frank Compositor</h2>
+            <p>
+                Antes de se tornar um cantor mundialmente conhecido, Frank Ocean trabalhou como compositor para diversos artistas. Suas composições abordavam temas como amor, saudade, crescimento pessoal e autoconhecimento. Esse período foi importante para desenvolver seu talento como escritor, que mais tarde se tornaria uma das características mais marcantes de sua carreira musical. Algumas de suas composições são:
+            </p>
+
+            <div class="track-list-flat">
+                <div class="track-item">
+                    <h3>Bigger (Justin Bieber)</h3>
+                    <p>Fala sobre crescimento pessoal, confiança e acreditar que é possível alcançar objetivos maiores.</p>
+                </div>
+                <div class="track-item">
+                    <h3>I Miss You (Beyoncé)</h3>
+                    <p>Retrata a saudade e a dor de estar longe de alguém que se ama.</p>
+                </div>
+                <div class="track-item">
+                    <h3>One Thing (Alicia Keys)</h3>
+                    <p>Fala sobre encontrar algo ou alguém que dá verdadeiro sentido à vida.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Prêmios -->
+        <section id="premios" class="card">
+            <h2>Prêmios e Reconhecimentos</h2>
+            <p>
+                Ao longo de sua carreira, Frank Ocean recebeu diversos prêmios importantes da indústria musical, sendo reconhecido por suas letras profundas, inovação artística e influência no R&amp;B contemporâneo. Os prêmios são:
+            </p>
+
+            <div class="awards-container">
+                
+                <div class="award-block">
+                    <h3>Grammy Awards (2013)</h3>
+                    <p>Frank ganhou 2 prêmios Grammy, a maior premiação nos Estados Unidos:</p>
+                    
+                    <div class="award-item">
+                        <h4>Melhor Álbum Urbano Contemporâneo</h4>
+                        <p>pelo álbum Channel Orange</p>
+                        <img src="frank premio1.jpeg" alt="Grammy 1" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=500&q=80'">
+                    </div>
+
+                    <div class="award-item">
+                        <h4>Melhor Colaboração Rap/Cantada</h4>
+                        <p>pela música No Church in the Wild, ao lado de Jay-Z, Kanye West e The-Dream.</p>
+                        <img src="frank premio amig.jpeg" alt="Grammy 2" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=500&q=80'">
+                    </div>
+
+                    <p class="award-footnote">
+                        Além das vitórias, ele também foi indicado a categorias importantes como Álbum do Ano, Gravação do Ano e Artista Revelação.
+                    </p>
+                </div>
+
+                <div class="award-block">
+                    <h3>Brit Award (2013)</h3>
+                    <p>Frank Ocean venceu o Brit Award de Melhor Artista Masculino Internacional, uma das maiores premiações musicais do Reino Unido.</p>
+                    <img src="frank brit.jpeg" alt="Brit Award" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=500&q=80'">
+                </div>
+
+                <div class="award-block">
+                    <h3>GLAAD Media Award (2013)</h3>
+                    <p>Seu álbum <em>Channel Orange</em> recebeu o prêmio de Melhor Artista Musical da organização GLAAD, que reconhece artistas que promovem representações positivas e inclusivas.</p>
+                    <p>Além dos prêmios, ele é frequentemente citado como uma das maiores influências da música do século XXI.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção: Curiosidades -->
+        <section class="card">
+            <h2>Curiosidades</h2>
+            <ul class="curiosities-list">
+                <li>Em 2012, publicou uma carta aberta falando sobre um relacionamento amoroso com outro homem, tornando-se uma figura importante para a representatividade LGBTQIA+ na música.</li>
+                <li>Em 2015, Frank Ocean alterou legalmente seu nome de Christopher Breaux para Christopher Francis Ocean.</li>
+                <li>Frank tem grande interesse por automóveis, tema que aparece em várias de suas músicas e entrevistas.</li>
+                <li>Diferente de muitos artistas famosos, Frank raramente compartilha detalhes de sua vida pessoal nas redes sociais.</li>
+                <li>Ele tem grande influência na música atual. Artistas como SZA, Billie Eilish e The Weeknd já foram comparados ao estilo inovador e emocional de Frank Ocean.</li>
+                <li>Frank é conhecido por esconder significados e referências em suas letras, o que faz com que muitos fãs passem anos analisando suas músicas.</li>
+            </ul>
+
+            <div class="gallery-single">
+                <img src="frankk.jpg" alt="Frank Ocean Portrait" class="lightbox-trigger" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=800&q=80'">
+            </div>
+        </section>
+
+        <!-- Seção: Legado -->
+        <section class="card section-legacy">
+            <h2>Legado</h2>
+            <p>
+                Frank Ocean redefiniu os limites do R&amp;B moderno ao combinar experimentação sonora, poesia e autenticidade em suas obras. Sua influência pode ser vista em diversos artistas contemporâneos, e seu trabalho continua sendo estudado e admirado por fãs e críticos ao redor do mundo.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>Tributo a Frank Ocean</p>
+            <a href="https://youtu.be/midVwDF2ko8?si=ig7xB5Y72UKYfYf-" target="_blank" rel="noopener" class="btn-yt">
+                <span>▶</span> frank cantando pyramids
+            </a>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop" title="Voltar ao topo">↑</button>
+
+    <!-- Modal Lightbox (Visualização de imagem em tela cheia) -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-image" id="lightboxImage" src="" alt="Imagem Ampliada">
+    </div>
+
+    <!-- Código JavaScript do site -->
+    <script>
+        // 1. Toggle de Informações do Álbum
+        function toggleAlbum(id) {
+            const selectedInfo = document.getElementById(id);
+            const isOpen = selectedInfo.classList.contains("show");
+
+            // Fecha todas as caixas de informações
+            document.querySelectorAll(".album-info").forEach(info => {
+                info.classList.remove("show");
+            });
+
+            // Abre a selecionada caso estivesse fechada
+            if (!isOpen) {
+                selectedInfo.classList.add("show");
+            }
+        }
+
+        // 2. Filtro de Busca de Músicas
+        function filterSongs() {
+            const input = document.getElementById('songSearch');
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('.tracks-grid .track-card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const text = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(filter) || text.includes(filter)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // 3. Barra de Progresso de Leitura & Botão Voltar ao Topo
+        window.onscroll = function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            document.getElementById("progressBar").style.width = scrolled + "%";
+
+            // Botão Topo
+            const topBtn = document.getElementById("backToTop");
+            if (winScroll > 400) {
+                topBtn.classList.add("show");
+            } else {
+                topBtn.classList.remove("show");
+            }
+        };
+
+        document.getElementById("backToTop").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // 4. Modal Lightbox de Imagens
+        const modal = document.getElementById("lightboxModal");
+        const modalImg = document.getElementById("lightboxImage");
+        const closeBtn = document.getElementById("lightboxClose");
+
+        document.querySelectorAll('.lightbox-trigger').forEach(img => {
+            img.onclick = function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            }
         });
 
-        // Abre a selecionada, se estava fechada.
-        if (!isOpen) {
-            selectedInfo.classList.add("show");
-        }
-    }
-</script>
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        modal.onclick = function(e) {
+            if (e.target !== modalImg) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>
